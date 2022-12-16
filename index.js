@@ -1,7 +1,11 @@
 module.exports = {
-  plugins: ["prettier"],
-  extends: ["plugin:prettier/recommended"],
+  plugins: ['prettier'],
+  extends: [
+    'eslint:recommended',
+    require.resolve('eslint-config-prettier'),
+    require.resolve('eslint-config-prettier/kdu')
+  ],
   rules: {
-    "prettier/prettier": "warn",
-  },
-};
+    'prettier/prettier': 'warn'
+  }
+}

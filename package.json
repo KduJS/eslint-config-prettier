@@ -1,11 +1,8 @@
 {
   "name": "@kdujs/eslint-config-prettier",
-  "version": "7.0.0-rc.0",
-  "description": "eslint-config-prettier for Kdu",
+  "version": "5.0.0",
+  "description": "eslint-config-prettier for kdu-cli",
   "main": "index.js",
-  "files": [
-    "index.js"
-  ],
   "publishConfig": {
     "access": "public"
   },
@@ -15,9 +12,7 @@
   },
   "keywords": [
     "kdu",
-    "cli",
-    "eslint",
-    "prettier"
+    "cli"
   ],
   "author": "NKDuy",
   "license": "MIT",
@@ -26,23 +21,11 @@
   },
   "homepage": "https://github.com/kdujs/eslint-config-prettier#readme",
   "dependencies": {
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^4.0.0"
-  },
-  "devDependencies": {
-    "eslint": "^8.5.0",
-    "prettier": "^2.5.1"
+    "eslint-config-prettier": "^6.0.0"
   },
   "peerDependencies": {
-    "eslint": ">= 7.28.0",
-    "prettier": ">= 2.0.0"
-  },
-  "eslintConfig": {
-    "extends": [
-      "./index.js"
-    ]
-  },
-  "scripts": {
-    "lint": "eslint index.js --fix"
+    "eslint": ">= 5.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": ">= 1.13.0"
   }
 }
